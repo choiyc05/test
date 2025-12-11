@@ -2,37 +2,33 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 및 회원가입</title>
-    <link rel="stylesheet" href="style.css">
+    <title>메인 메뉴</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 100px; }
+        ol { list-style: none; padding: 0; }
+        .li { margin-bottom: 10px; }
+        .li a {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .li a:hover { background-color: #45a049; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="form-box">
-            <form id="login-form" class="input-group">
-                <h2>로그인</h2>
-                <input type="text" class="input-field" placeholder="아이디" required>
-                <input type="password" class="input-field" placeholder="비밀번호" required>
-                <button type="submit" class="submit-btn">로그인</button>
-                <p class="switch-text">계정이 없으신가요? <span onclick="toggleForm()">회원가입</span></p>
-            </form>
-
-            <form id="register-form" class="input-group hidden">
-                <h2>회원가입</h2>
-                <input type="text" class="input-field" placeholder="아이디" required>
-                <input type="email" class="input-field" placeholder="이메일" required>
-                <input type="password" class="input-field" placeholder="비밀번호" required>
-                <button type="submit" class="submit-btn">가입하기</button>
-                <p class="switch-text">이미 계정이 있나요? <span onclick="toggleForm()">로그인</span></p>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        function toggleForm() {
-            document.getElementById('login-form').classList.toggle('hidden');
-            document.getElementById('register-form').classList.toggle('hidden');
-        }
-    </script>
+    <ol>
+        <li class="li">
+            <a href="login.html">LOGIN</a>
+        </li>
+        <li class="li">
+            <a href="register.html">SIGN UP</a>
+        </li>
+    </ol>
 </body>
 </html>
