@@ -1,70 +1,63 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+/* 기본 스타일 설정 */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
 
-body {
-    height: 100 vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f2f5;
-}
+        .container {
+            background: #fff;
+            width: 350px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+        }
 
-.container {
-    background: #fff;
-    width: 350px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-}
+        h2 { text-align: center; margin-bottom: 30px; color: #333; }
 
-.form-box h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-}
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* 패딩 포함 크기 조절 */
+        }
 
-.input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-}
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-.submit-btn {
-    width: 100%;
-    padding: 12px;
-    background: #4CAF50;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
+        /* 이동 버튼 리스트 스타일 (이미지 구조 응용) */
+        ol {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.submit-btn:hover {
-    background: #45a049;
-}
+        .li {
+            font-size: 14px;
+            color: #666;
+        }
 
-.switch-text {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-}
+        .li a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-.switch-text span {
-    color: #4CAF50;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.hidden {
-    display: none;
-}
+        .li a:hover {
+            text-decoration: underline;
+        }
